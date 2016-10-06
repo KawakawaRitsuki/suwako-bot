@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.hear /容量教えて/i, (msg) ->
-      request = msg.http('https://slack.com/api/files.list?token=xoxp-15061475204-15063155493-30123303441-5ebdc13619')
+      request = msg.http('https://slack.com/api/files.list?token='+process.env.SHELL)
       .get()
       request (err, res, body) ->
         json = JSON.parse body
