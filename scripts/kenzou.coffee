@@ -1,3 +1,17 @@
+# Description:
+#   艦これの
+#
+# Commands:
+#   <Hour>時間 - 該当する時間の艦娘一覧を表示します。
+#   <Minute>分 - 該当する時間の艦娘一覧を表示します。
+#   <Hour>時間<minute>分 - 該当する時間の艦娘一覧を表示します。
+#
+# URLS:
+#   /hubot/kenzou
+#
+# Notes:
+#   These commands are grabbed from comment blocks at the top of each file.
+
 module.exports = (robot) ->
   robot.hear /(\d+)時間/i, (msg) ->
 
